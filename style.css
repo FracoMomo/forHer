@@ -111,22 +111,22 @@ nav ul li a:hover {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: left;
   text-align: left;
   gap: 0.5rem;
   margin-left: 5%;
-  color: rgb(0, 0, 0);
+  color: rgb(140, 97, 29);
   padding: 1rem;
+  margin-top: 2rem;
 }
 
 #home img {
   rotate: -3deg;
-  width: 250px;
+  max-width: 240px;
   height: auto;
   position: relative;
   left: 5%;
-  margin-bottom: 1rem;
+  margin: 1rem;
 }
 
 #home h1 {
@@ -137,6 +137,46 @@ nav ul li a:hover {
   font-size: 2rem;
 }
 
+.subtitle {
+  position: relative;
+  left: 3%;
+  max-width: 400px;
+}
+
+.subtitle p {
+  position: relative;
+  left: 18rem;
+}
+
+@media (max-width: 768px){
+    #home {
+      min-height: 50vh;
+    }
+
+    #home img {
+    rotate: -3deg;
+    max-width: 150px;
+    height: auto;
+    position: relative;
+    left: 5%;
+    margin: 1rem;
+  }
+
+    #home h1 {
+    font-size: 1.5rem;
+  }
+
+    .subtitle p {
+    position: relative;
+    left: 9rem;
+    max-width: 100px;
+  }
+
+  .subtitle {
+    font-size: 0.7rem;
+  }
+}
+
 #about {
   min-height: 100vh;
   display: flex;
@@ -144,7 +184,7 @@ nav ul li a:hover {
   justify-content: center;
   align-items: center;
   text-align: left;
-  color: rgb(255, 255, 255);
+  color: rgb(196, 121, 36);
   padding: 1rem;
 }
 
@@ -155,7 +195,7 @@ nav ul li a:hover {
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: rgb(255, 255, 255);
+  color: rgb(173, 97, 27);
   padding: 1rem;
 }
 
@@ -337,7 +377,7 @@ nav ul li a:hover {
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: rgb(255, 255, 255);
+    color: rgb(143, 77, 26);
     padding: 5rem;
 }
 #future {
@@ -348,7 +388,7 @@ nav ul li a:hover {
   max-width: 1200px;
   margin: 0 auto;
   text-align: center;
-  color: #ffffff;
+  color:rgb(160, 97, 34);
 }
 
 /* Applies only to regular images directly inside .futeImg */
@@ -407,7 +447,7 @@ nav ul li a:hover {
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: rgb(255, 255, 255);
+  color: rgb(104, 93, 39);
   padding: 1rem;
 }
 
