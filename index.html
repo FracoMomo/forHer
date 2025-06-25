@@ -4,9 +4,11 @@
     <title>My Love</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Cutive+Mono&family=Monsieur+La+Doulaise&family=My+Soul&family=Special+Elite&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
-    <link href="https://fonts.googleapis.com/css2?family=My+Soul&family=Special+Elite&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav>
@@ -17,7 +19,7 @@
             <li><a href="#faves">Her Favorites</a></li>
             <li><a href="#gallery">Gallery</a></li>
             <li><a href="#letter">Letter</a></li>
-            <li><a href="#music">Music</a></li>
+            <li><a href="#songs">Music</a></li>
             <li><a href="#future">Future</a></li>
             <li><a href="#quotes">Quote</a></li>
         </ul>
@@ -25,70 +27,140 @@
 
 
     <div id="home">
-        <h1 class="typeFont">Dedicated to<br>My One and Only Love</h1>
-        <img src="img/Home.jpg" alt="Home Image">
-        <h1 class="typeFont name">Merby Key O. Galorio</h1>
-        <div class="subtitle caligFont">
+        <div class="webtitle">
+            <h1 class="back">Dedicated to</h1>
+            <h1 class="front">My One</h1>
+            <h1 class="back">and Only <b>Love</b></h1>
+            <img id="homeimg" src="img/Home.jpg" alt="Home">
+        </div>
+        <div class="subtitle">
+            <h1>Merby Key O. Galorio</h1>
             <h2>Learning to Dance in the Rain with You</h2>
             <p>-Seb</p>
         </div>
     </div>
 
+
     <div id="about">
-        <h1>About Her</h1>
-        <p>Humorous, Artistic, Beautiful, Nocturnal, Loving, Generous, Stormy, Honest, Unshakable, Cute, Resilient, Warm, Tough, Unpredictable, Sassy, Gorgeous, Sharp, Learning, Pretty, Growing, Curious, is what I would describe My Love and there's probably more.</p>
-
-        <h1>Birthday</h1>
-        <p>January 30 2006</p>
-
-        <h2>She is</h2>
-        <p>My Love</p>
-        <p>My Lovie</p>
-        <p>My Best Friend</p>
-        <p>My Partner</p>
-        <p>My Everything</p>
-        <p>My Future</p>
-        <p>My Forever</p>
-        <p>My Wife (soon to be)</p>
-        <p>My Lovely Dumpling</p>
-        <p>My Princess</p>
+        <h2>SHE IS</h2>
+        <div class="container">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+                <title>Multi-Layer Circular Text</title>
+                <defs>
+                    <!-- Outer circle path -->
+                    <path id="outer-path" d="M250,400 a150,150 0 0,1 0,-300a150,150 0 0,1 0,300Z" />
+                    
+                    <!-- Middle circle path -->
+                    <path id="middle-path" d="M250,375 a125,125 0 0,1 0,-250a125,125 0 0,1 0,250Z" />
+                    
+                    <!-- Inner circle path -->
+                    <path id="inner-path" d="M250,350 a100,100 0 0,1 0,-200a100,100 0 0,1 0,200Z" />
+                </defs>
+                
+                <g class="text-group">
+                    <!-- Outer text -->
+                    <text class="outer-text" textLength="940">
+                        <textPath href="#outer-path" textLength="940">
+                            | Humorous | Artistic | Beautiful | Nocturnal | Loving | Stormy |  Unshakable         
+                        </textPath>
+                    </text>
+                    
+                    <!-- Middle text -->
+                    <text class="middle-text" textLength="785">
+                        <textPath href="#middle-path" textLength="785">
+                           • Unpredictable • Sassy • Gorgeous • Sharp • Learning • Resilient  
+                        </textPath>
+                    </text>
+                    
+                    <!-- Inner text -->
+                    <text class="inner-text" textLength="628">
+                        <textPath href="#inner-path" textLength="628">
+                             ◆ Pretty ◆ Growing ◆ Curious ◆ Tough ◆ Cute ◆ Honest
+                        </textPath>
+                    </text>
+                </g>
+            </svg>
+        </div>
+        <!--
+            <div class="hernn">
+                <h2>She is</h2>
+                <p>My Love</p>
+                <p>My Lovie</p>
+                <p>My Best Friend</p>
+                <p>My Partner</p>
+                <p>My Everything</p>
+                <p>My Future</p>
+                <p>My Forever</p>
+                <p>My Wife (soon to be)</p>
+                <p>My Lovely Dumpling</p>
+                <p>My Princess</p>
+            </div>
+            -->
     </div>
-
-    <div id="faves">
-        <h1>Her Faves</h1>
-            <div class="favFood">
-                <h1>Food</h1>
-                <p>Coffee</p>
-                <p>Ube</p>
-                <p>Ice Cream Flavors</p>
-                    <p>Avocado</p>
-                    <p>Cookies and Cream</p>
-                    <p>Pistachio</p>
-            </div>
             
-            <div class="favColor">
-                <h1>Colors</h1>
-                    <p>Yellow</p>
-                    <p>Green</p>
-                    <p>Green</p>
-                    <p>Brown</p>
+    <div class="decoration">✿</div>
+    <div class="decoration">❋</div>
+    <div class="decoration">✾</div>
+    <div class="decoration">❀</div>
+
+    <div class="scrapbook-page">
+        <h1 class="page-title" id="faves">Her Faves</h1>
+        
+        <div class="polaroid-grid">
+            <div class="polaroid">
+                <div class="polaroid-content">
+                    <h2 class="section-label">Food</h2>
+                    <ul class="fave-list">
+                        <li>Coffee</li>
+                        <li>Ube</li>
+                        <li>Ice Cream Flavors</li>
+                        <li class="sub-item">Avocado</li>
+                        <li class="sub-item">Cookies and Cream</li>
+                        <li class="sub-item">Pistachio</li>
+                    </ul>
+                </div>
+                <div class="polaroid-caption">Delicious Treats</div>
             </div>
 
-            <div class="favHob">
-                <h1>Hobbies</h1>
-                    <p>Drawing</p>
-                    <p>Reading</p>
-                    <p>Crochet</p>
-                    <p>Story Writing</p>
+            <div class="polaroid">
+                <div class="polaroid-content">
+                    <h2 class="section-label">Colors</h2>
+                    <ul class="fave-list">
+                        <li>Yellow</li>
+                        <li>Green</li>
+                        <li>Green</li>
+                        <li>Brown</li>
+                    </ul>
+                </div>
+                <div class="polaroid-caption">Beautiful Hues</div>
             </div>
 
-            <div class="other">
-                <h1>Other Things</h1>
-                    <p>Border Collies</p>
-                    <p>Daisies</p>
-                    <p>Sunflowers</p>
-                    <p>Spirited Away</p>
+            <div class="polaroid">
+                <div class="polaroid-content">
+                    <h2 class="section-label">Hobbies</h2>
+                    <ul class="fave-list">
+                        <li>Drawing</li>
+                        <li>Reading</li>
+                        <li>Crochet</li>
+                        <li>Story Writing</li>
+                    </ul>
+                </div>
+                <div class="polaroid-caption">Creative Passions</div>
             </div>
+
+            <div class="polaroid">
+                <div class="polaroid-content">
+                    <h2 class="section-label">Other Things</h2>
+                    <ul class="fave-list">
+                        <li>Border Collies</li>
+                        <li>Daisies</li>
+                        <li>Sunflowers</li>
+                        <li>Spirited Away</li>
+                    </ul>
+                </div>
+                <div class="polaroid-caption">Special Loves</div>
+            </div>
+        </div>
     </div>
 
     <div id="gallery">
@@ -126,6 +198,12 @@
                 <div class="item">
                     <div class="img" style="background-image: url(img/gal10.jpg)"></div>
                 </div>
+                <div class="item">
+                    <div class="img" style="background-image: url(img/gal11.jpg)"></div>
+                </div>
+                <div class="item">
+                    <div class="img" style="background-image: url(img/gal12.jpg)"></div>
+                </div>
             </div>
         </div>
     </div>
@@ -148,8 +226,82 @@
 
     
     <div id="songs">
-        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0D1ecMMsSIpJbjPoJMHGkV?utm_source=generator" width="25%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/104buTcnP2AsxqB7U1FIZ4?utm_source=generator" width="25%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <div class="floating-notes">
+        <div class="note">♪</div>
+        <div class="note">♫</div>
+        <div class="note">♪</div>
+        <div class="note">♫</div>
+        <div class="note">♪</div>
+        <div class="note">♫</div>
+        <div class="note">♪</div>
+        <div class="note">♫</div>
+        <div class="note">♪</div>
+    </div>
+    
+    <div class="vintage-phonograph">
+        <header class="gramophone-header reveal-up">
+            <h1 class="main-title">PHONOGRAPH CLASSICS</h1>
+            <p class="subtitle">Treasured Melodies from the Collection</p>
+        </header>
+        
+        <div class="vinyl-container">
+            <div class="vinyl-record">
+                <div class="record-disc">
+                    <div class="record-grooves"></div>
+                </div>
+                <div class="song-info">
+                    <div class="track-number">I</div>
+                    <h3 class="song-title">A Little Braver</h3>
+                    <p class="artist-name">New Empire</p>
+                    <p class="song-description">An anthem of courage that resonates through the soul, inspiring listeners to find their inner strength and face life's challenges with unwavering determination and grace.</p>
+                </div>
+            </div>
+            
+            <div class="vinyl-record">
+                <div class="record-disc">
+                    <div class="record-grooves"></div>
+                </div>
+                <div class="song-info">
+                    <div class="track-number">II</div>
+                    <h3 class="song-title">Marmalade</h3>
+                    <p class="artist-name">Macklemore ft. Lil Yachty</p>
+                    <p class="song-description">A vibrant symphony of joy and creativity, this track brings sunshine to the darkest days with its infectious energy and masterful wordplay that dances through the air.</p>
+                </div>
+            </div>
+            
+            <div class="vinyl-record">
+                <div class="record-disc">
+                    <div class="record-grooves"></div>
+                </div>
+                <div class="song-info">
+                    <div class="track-number">III</div>
+                    <h3 class="song-title">Be Kind</h3>
+                    <p class="artist-name">Marshmello & Halsey</p>
+                    <p class="song-description">A gentle reminder wrapped in electronic harmonies, delivering a powerful message of compassion and understanding that echoes through the chambers of the heart.</p>
+                </div>
+            </div>
+            
+            <div class="vinyl-record">
+                <div class="record-disc">
+                    <div class="record-grooves"></div>
+                </div>
+                <div class="song-info">
+                    <div class="track-number">IV</div>
+                    <h3 class="song-title">Hymn for the Weekend</h3>
+                    <p class="artist-name">Coldplay ft. Beyoncé</p>
+                    <p class="song-description">An uplifting celebration that captures the euphoric essence of being completely alive, soaring through melodies that paint the sky with colors of pure joy and love.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="ornamental-divider reveal-up">
+            <div class="ornament-center">❦</div>
+        </div>
+        
+        <footer class="vintage-footer reveal-up">
+            <p class="footer-quote">"Where words fail, music speaks" - Hans Christian Andersen</p>
+        </footer>
+    </div>
     </div>
 
     <div id="future">
@@ -177,10 +329,8 @@
                 <p>She's so cuteeee n prettyyyy!!!</p>
             </div>
         </div>
-    </div>
+    </div>  
 
-    </div>
-<!--
     <div id="quotes" class="last">
         <h1>To My Love ─ reading this, know that I love you so much.</h1>
     </div>
@@ -194,6 +344,5 @@
         <h1>Always learning to dance in the rain with you.</h1>
         <p>You remind me of that one fruit, what was it again? Ahh yes! The Guava.</p>
     </div>
--->
 </body>
 </html>

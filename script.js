@@ -99,3 +99,67 @@ function toggleFold() {
 
 // Init: start open
 fold(1);
+
+const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+        
+        // Observe all animated elements
+        const animatedElements = document.querySelectorAll('.vinyl-record, .reveal-up');
+        animatedElements.forEach(el => observer.observe(el));
+        
+        // Add parallax effect to floating notes
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const notes = document.querySelectorAll('.note');
+            
+            notes.forEach((note, index) => {
+                const speed = (index + 1) * 0.1;
+                const yPos = -(scrolled * speed);
+                note.style.transform = `translateY(${yPos}px) rotate(${scrolled * 0.05}deg)`;
+            });
+        });
+        
+        // Add hover sound effect simulation
+        document.querySelectorAll('.record-disc').forEach(disc => {
+            disc.addEventListener('mouseenter', () => {
+                disc.style.boxShadow = '0 0 50px rgba(212, 175, 55, 0.6), inset 0 0 30px rgba(255,255,255,0.2)';
+            });
+            
+            disc.addEventListener('mouseleave', () => {
+                disc.style.boxShadow = '0 0 30px rgba(0,0,0,0.8), inset 0 0 30px rgba(255,255,255,0.1)';
+            });
+        });
+        
+        // Typewriter effect for the main title
+        function typeWriter(element, text, speed = 100) {
+            let i = 0;
+            element.innerHTML = '';
+            
+            function type() {
+                if (i < text.length) {
+                    element.innerHTML += text.charAt(i);
+                    i++;
+                    setTimeout(type, speed);
+                }
+            }
+            type();
+        }
+        
+        // Initialize typewriter effect when page loads
+        window.addEventListener('load', () => {
+            const titleElement = document.querySelector('.main-title');
+            const originalText = titleElement.textContent;
+            setTimeout(() => {
+                typeWriter(titleElement, originalText, 150);
+            }, 500);
+        });
